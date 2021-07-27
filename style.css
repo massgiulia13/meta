@@ -46,8 +46,8 @@ sup {
     border-radius: 0 5px 5px 0;
 }*/
 #sidebar {
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 350px;
+    max-width: 350px;
     background: rgb(0, 90, 150); /*#1AABCB;*/
     color: #fff;
     transition: all 0.3s;
