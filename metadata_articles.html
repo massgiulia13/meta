@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700:100,300,400,500,700,900|Lekton:700:100,300,400,500,700,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700:100,300,400,500,700,900&display=swap">
+  <!--Missing material icons-->
+  <script src="https://kit.fontawesome.com/70065d05b7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+   <link href="style.css" rel="stylesheet"> 
+</head>
+
+<body>
+ <!--<div class="indi"> <a id="back" href="/edition/browse/editorial_plan/110" title="Torna all'edizione"><i class="fas fa-arrow-left"></i></a></div> -->
+  <div class="container-fluid" style="padding-right: 0;">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+     <div class="sidebar-header">
+         <h3>Metadata Viewer</h3>
+         <strong>MV</strong>
+     </div>
+
+     <ul class="list-unstyled components">
+         <li class="active">
+            <!--<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <i class="fa-solid fa-book-open"></i>
+                 Esplora
+             </a>
+             <ul class="collapse list-unstyled" id="homeSubmenu"> -->
+
+              <div class="h-100 pr-1 mt-2 disable-select" id="left">
+                <div class="row pb-5 loadedDocumentOnly h-70" id="topPane">
+                  <div class="col-12 h-100 pr-0 mb-4">
+                    <ul class="nav nav-tabs  mr-auto" id="categoryTab" role="tablist">
+        
+        
+                      <li class="nav-item dropPoint" id="person-tab" data-level="category" data-id="person">
+                        <a class="nav-link active" id="person-tab" data-toggle="tab" href="#person-pane" role="tab" aria-controls="person" aria-selected="true">
+                          People
+                        </a>
+                      </li>
+        
+                      <li class="nav-item dropPoint" id="place-tab" data-level="category" data-id="place">
+                        <a class="nav-link" id="place-tab" data-toggle="tab" href="#place-pane" role="tab" aria-controls="place" aria-selected="false">
+                          Places
+                        </a>
+                      </li>
+        
+                      <li class="nav-item dropPoint" id="concept-tab" data-level="category" data-id="concept">
+                        <a class="nav-link" id="concept-tab" data-toggle="tab" href="#concepts-pane" role="tab" aria-controls="concepts" aria-selected="false">
+                          Concepts
+                        </a>
+                      </li>
+        
+                      <li class="nav-item ml-auto pointer">
+                        <a class="nav-link" id="help-tab" data-toggle="modal" data-target="#prefs">
+                          <span class="oi oi-cog" title="Apri le preferenze" aria-hidden="true"></span>
+                          <span class="sr-only">Preferences</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content d-flex flex-column h-100" id="categoryPane">
+        
+        
+                      <div class="tab-pane scroll-always ug-border ug-border-notop h-100 dropPoint active" id="person-pane" role="tabpanel" aria-labelledby="person-tab" data-level="category" data-id="person">
+                        <ul class="categoryContainer tree">
+        
+                          <li class="entityContainer draggable dropPoint" id="Bhavani" data-level="entity" data-id="Bhavani">
+                            <a href="https://twitter.com/divyakbhavani?lang=en" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Divya Kala Bhavani</span>
+                              </div>
+        
+        
+                            </a>
+        
+        
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">million copies globally</span>
+                                <span class="label"><strong>Divya Kala Bhavani</strong></span>
+                                <span class="after">APRIL 20, 2020 17:48 IST UPDATED: APRIL 21, 2020 11:53 IST</span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="Pearson" data-level="entity" data-id="Pearson">
+                            <a href="https://twitter.com/simgurulyndsay?lang=en" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Lyndsay Pearson</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Lyndsay Pearson</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Wright" data-level="entity" data-id="Wright">
+                            <a href="https://en.wikipedia.org/wiki/Will_Wright_(game_designer)" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Will Wright</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Will Wright</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Duke" data-level="entity" data-id="Duke">
+                            <a href="https://www.linkedin.com/in/michael-duke-b009a06" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Mike Duke</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"> General Manager of The Sims, and </span>
+                              <span class="label"><strong>Mike Duke</strong></span>
+                              <span class="after">, Senior Productor</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="Siddall" data-level="entity" data-id="Siddall">
+                            <a href="http://www.livsiddall.com/" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Liv Siddal</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"> my real existence’:</span>
+                              <span class="label"><strong>Liv Siddal</strong></span>
+                              <span class="after">Illustration:</span>
+        
+                            </div>
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Faggins" data-level="entity" data-id="Faggins">
+                            <a href="http://www.livsiddall.com/" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Krissten Faggins</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"> 24-year-old </span>
+                              <span class="label"><strong>Krissten Faggins</strong></span>
+                              <span class="after">, who plays as CoCo Games</span>
+        
+                            </div>
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Mosley" data-level="entity" data-id="Mosley">
+                            <a href="http://www.livsiddall.com/" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Robin Mosley</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"> ,Jadin said.</span>
+                              <span class="label"><strong>Robin Mosley</strong></span>
+                              <span class="after"> is a Chicago-based game writer </span>
+        
+                            </div>
+                          </ul>
+        
+        
+                          <li class="entityContainer draggable dropPoint" id="Keighley" data-level="entity" data-id="Keighley">
+                            <a href="http://www.livsiddall.com/" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Geoff Keighley</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"> In a fireside chat with</span>
+                              <span class="label"><strong>Geoff Keighley</strong></span>
+                              <span class="after">at our</span>
+        
+                            </div>
+        
+        
+        
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Kelly" data-level="entity" data-id="Kelly">
+                            <a href="https://www.theguardian.com/profile/andy-kelly" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Andy Kelly</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Andy Kelly</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Godfrey" data-level="entity" data-id="Godfrey">
+                            <a href="https://uk.linkedin.com/in/kirsten-godfrey-tyler-b26ab719" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Kirsten Godfrey</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Kirsten Godfrey</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Geppert" data-level="entity" data-id="Geppert">
+                            <a href="https://twitter.com/CorneliaGeppert?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                              class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Cornelia Geppert</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Cornelia Geppert</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Plagge" data-level="entity" data-id="Plagge">
+                            <a href="https://twitter.com/inkydojikko?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                              class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Kallie Plagge</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Kallie Plagge</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="JasonSterling" data-level="entity" data-id="Sterling">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Jason Sterling</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before"></span>
+                              <span class="label"><strong>Jason Sterling</strong></span>
+                              <span class="after"></span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Pagayonan" data-level="entity" data-id="Pagayonan">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Mela Pagayonan</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before">concepts inspired by architectural icons</span>
+                              <span class="label"><strong>Mela Pagayonan</strong></span>
+                              <span class="after">, a 44-year-old software trainer</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Wilson" data-level="entity" data-id="Wilson">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel"> Edward O. Wilson</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before">was inspired by evolutionary biologist </span>
+                              <span class="label"><strong> Edward O. Wilson</strong></span>
+                              <span class="after">'s famous studies of ant colonies.</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Brouchoud" data-level="entity" data-id="Brouchoud">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+                                <span class="entityLabel">Jon Brouchoud</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before">countries design their own public spaces</span>
+                              <span class="label"><strong>Jon Brouchoud</strong></span>
+                              <span class="after">, who has a B.Arch, M.Arch, and founded Arch Virtual,</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Minichiello" data-level="entity" data-id="Minichiello">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+                                <span class="entityLabel">Vincent Minichiello</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before">and that The Sims could help you?</span>
+                              <span class="label"><strong>Vincent Minichiello</strong></span>
+                              <span class="after">was in a limbo state</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Schmidlapp" data-level="entity" data-id="Schmidlapp">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+                                <span class="entityLabel">Jeannie Schmidlapp</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before">Killing Your Sims Does Not Mean You’re a Serial Killer</span>
+                              <span class="label"><strong>Jeannie Schmidlapp</strong></span>
+                              <span class="after"> likes to kill her Sims.</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                          <li class="entityContainer draggable dropPoint" id="Kowert" data-level="entity" data-id="Kowert">
+                            <a href="" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+                                <span class="entityLabel">Rachel Kowert</span>
+                              </div>
+                            </a>
+                          </li>
+                          <ul>
+        
+                            <div>
+                              <span class="before">in-game play and IRL lives, according to</span>
+                              <span class="label"><strong>Jeannie Schmidlapp</strong></span>
+                              <span class="after"> research director at Take This</span>
+        
+                            </div>
+        
+        
+                          </ul>
+                        </ul>
+                      </div>
+        
+        
+        
+        
+        
+                      <div class="tab-pane scroll-always ug-border ug-border-notop h-100 dropPoint" id="place-pane" role="tabpanel" aria-labelledby="place-tab" data-level="category" data-id="place">
+                        <ul class="categoryContainer tree">
+        
+                          <li class="entityContainer draggable dropPoint" id="LosAngeles" data-level="entity" data-id="Los Angeles">
+                            <a href="https://en.wikipedia.org/wiki/Los_Angeles" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Los Angeles</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">Electronic Entertainment Expo in </span>
+                                <span class="label">Los Angeles</span>
+                                <span class="after">, California.</span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="Washington" data-level="entity" data-id="Washington">
+                            <a href="https://en.wikipedia.org/wiki/Los_Angeles" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Washington, DC</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">left the agency he worked for in </span>
+                                <span class="label"><strong>Washington, DC</strong></span>
+                                <span class="after">and was spending a few weeks</span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="SanMyshuno" data-level="entity" data-id="SanMyshuno">
+                            <a href="https://en.wikipedia.org/wiki/Los_Angeles" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">San Myshuno</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">After moving my Sim into her new apartment in </span>
+                                <span class="label"><strong>San Myshuno</strong></span>
+                                <span class="after">, spending hours decking it </span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+        
+                          <li class="entityContainer draggable dropPoint" id="California" data-level="entity" data-id="California">
+                            <a href="https://en.wikipedia.org/wiki/California" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">California</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before"> Los Angeles, </span>
+                                <span class="label">California</span>
+                                <span class="after">. Lyndsay explains,</span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+        
+                          <li class="entityContainer draggable dropPoint" id="Botswana" data-level="entity" data-id="Botswana">
+                            <a href="https://en.wikipedia.org/wiki/Botswana" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Botswana</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">who grew up in</span>
+                                <span class="label"><strong>Botswana,</strong></span>
+                                <span class="after">completed her</span>
+                              </div>
+        
+                            </ul>
+                          </li>
+        
+                          <li class="entityContainer draggable dropPoint" id="London" data-level="entity" data-id="London">
+                            <a href="https://en.wikipedia.org/wiki/London" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">London</span>
+                              </div>
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">higher education in </span>
+                                <span class="label"><strong>London</strong></span>
+                                <span class="after">and writes on themes</span>
+        
+                              </div>
+                            </ul>
+                          </li>
+        
+        
+        
+                          <li class="entityContainer draggable dropPoint" id="Seattle" data-level="entity" data-id="Seattle">
+                            <a href="#" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Seattle</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">Then, Minichiello moved to</span>
+                                <span class="label"><strong>Seattle</strong></span>
+                                <span class="after">. After staying in an </span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+        
+                          <li class="entityContainer draggable dropPoint" id="USA" data-level="entity" data-id="USA">
+                            <a href="#" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">River Forest, Illinois, USA</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">Dominican University</span>
+                                <span class="label">River Forest, Illinois, USA</span>
+                                <span class="after">There were 9 male</span>
+        
+                              </div>
+        
+                            </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="Oklahoma" data-level="entity" data-id="Oklahoma">
+                            <a href="#" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Oklahoma City</span>
+                              </div>
+        
+                              <ul>
+                            </a>
+        
+                            <div>
+                              <span class="before">his hair salon just outside </span>
+                              <span class="label"><strong>Oklahoma City</strong></span>
+                              <span class="after"> ,or taking care</span>
+        
+                            </div>
+        
+                        </ul>
+                        </li>
+        
+        
+                        <li class="entityContainer draggable dropPoint" id="United States" data-level="entity" data-id="USA">
+                          <a href="#" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                            <div>
+        
+                              <span class="entityLabel">United States</span>
+                            </div>
+        
+        
+                          </a>
+        
+                          <ul>
+        
+                            <div>
+                              <span class="before">Back in the</span>
+                              <span class="label"></strong>United States</strong></span>
+                              <span class="after">Philadelphia</span>
+        
+                            </div>
+        
+                          </ul>
+                        </li>
+        
+        
+        
+                        <li class="entityContainer draggable dropPoint" id="Philadelphia" data-level="entity" data-id="Philadelphia">
+                          <a href="#" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                            <div>
+        
+                              <span class="entityLabel">Philadelphia</span>
+                            </div>
+        
+        
+                          </a>
+        
+                          <ul>
+        
+                            <div>
+                              <span class="before">United States,</span>
+                              <span class="label"><strong>Philadelphia</strong></span>
+                              <span class="after">- based</span>
+        
+                            </div>
+        
+                          </ul>
+                        </li>
+                      </div>
+        
+        
+        
+                      <div class="tab-pane scroll-always ug-border ug-border-notop h-100 dropPoint" id="concepts-pane" role="tabpanel" aria-labelledby="concepts-tab" data-level="category" data-id="concepts">
+                        <ul class="categoryContainer tree">
+        
+                          <li class="entityContainer draggable dropPoint" id="EAgames" data-level="entity" data-id="EAgames">
+                            <a href="https://www.ea.com/it-it" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel"> Electronic Arts Games</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">pAccording to the piece </span>
+                                <span class="label"> Electronic Arts</span>
+                                <span class="after">‘Behind Closed Doors: A Brief History of The Sims’</span>
+        
+                              </div>
+        
+                              <div>
+                                <span class="before"> video games published by </span>
+                                <span class="label">Electronic Arts (EA) </span>
+                                <span class="after"> , has sold more than 100 million copies</span>
+        
+                              </div>
+                              <div>
+                                <span class="before">but how does</span>
+                                <span class="label">EA</span>
+                                <span class="after">know when to draw a line</span>
+                              </div>
+                              <div>
+                                <span class="before">Photograph:</span>
+                                <span class="label"> EA Games</span>
+                                <span class="after"></span>
+        
+                              </div>
+        
+        
+        
+                            </ul>
+                          </li>
+        
+                          <li class="entityContainer draggable dropPoint" id="idSoftware" data-level="entity" data-id="idSoftware">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">id Software</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before"></span>
+                                <span class="label">id Software</span>
+                                <span class="after"></span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          <li class="entityContainer draggable dropPoint" id="Dominican" data-level="entity" data-id="Dominican">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Dominican University</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before"></span>
+                                <span class="label">Dominican University</span>
+                                <span class="after"></span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="Airbnb" data-level="entity" data-id="Airbnb">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Airbnb</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">After staying in an</span>
+                                <span class="label">Airbnb</span>
+                                <span class="after">for two weeks</span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          </li>
+        
+        
+                          <li class="entityContainer draggable dropPoint" id="PopularScience" data-level="entity" data-id="PopularScience">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Popular Science</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">standardized measures such as the</span>
+                                <span class="label"><strong>Popular Science</strong></span>
+                                <span class="after">consulting editor,</span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          </li>
+        
+                          <li class="entityContainer draggable dropPoint" id="MaxisStudios" data-level="entity" data-id="MaxisStudios">
+                            <a href="https://www.ea.com/ea-studios/maxis" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Maxis Studios</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before"></span>
+                                <span class="label">Maxis</span>
+                                <span class="after"></span>
+        
+                              </div>
+        
+                              <div>
+                                <span class="before"></span>
+                                <span class="label">Maxis</span>
+                                <span class="after"></span>
+        
+                              </div>
+        
+        
+        
+        
+        
+        
+                            </ul>
+                          </li>
+                          <li class="entityContainer draggable dropPoint" id="VerizonMedia" data-level="entity" data-id="VerizonMedia">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Verizon Media</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">The site, now owned by</span>
+                                <span class="label"><strong>Verizon Media</strong></span>
+                                <span class="after">, has over 509.7 million blogs,</span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          <li class="entityContainer draggable dropPoint" id="Tumblr" data-level="entity" data-id="Tumblr">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Tumblr</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">and fans through</span>
+                                <span class="label"><strong>Tumblr</strong></span>
+                                <span class="after">, where many Sims creators post their work to promote their skills</span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          <li class="entityContainer draggable dropPoint" id="GamesBeat" data-level="entity" data-id="idSoftware">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Games Beat</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">for a long time.</span>
+                                <span class="label"></strong>Games Beat</strong></span>
+                                <span class="after">s creed when covering the game industry </span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          <li class="entityContainer draggable dropPoint" id="SEED" data-level="entity" data-id="SEED">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">SEED</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">we have a group called </span>
+                                <span class="label"></strong>SEED</strong></span>
+                                <span class="after">,the Search for Extraordinary Experiences Division of Electronic Arts. </span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          <li class="entityContainer draggable dropPoint" id="FIFA" data-level="entity" data-id="FIFA">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">FIFA</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">more entry points.</span>
+                                <span class="label"></strong>FIFA</strong></span>
+                                <span class="after">has a mobile game in addition to its PC </span>
+        
+                              </div>
+        
+        
+                            </ul>
+        
+        
+                          <li class="entityContainer draggable dropPoint" id="Inventory" data-level="entity" data-id="Inventory">
+                            <a href="https://www.idsoftware.com/?/age_gate" target="_blank" class="d-inline-flex flex-nowrap align-items-center justify-content-between rounded hoverTreeExpand bg-light w-100 treeExpand">
+                              <div>
+        
+                                <span class="entityLabel">Minnesota Multiphasic Personality Inventory-2 (MMPI-2)</span>
+                              </div>
+        
+        
+                            </a>
+        
+                            <ul>
+        
+                              <div>
+                                <span class="before">standardized measures such as the</span>
+                                <span class="label">Minnesota Multiphasic Personality Inventory-2 (MMPI-2)</span>
+                                <span class="after">to assess a</span>
+        
+                              </div>
+        
+        
+                            </ul>
+                          </li>
+        
+        
+        
+        
+        
+                        </ul>
+        
+                      </div>
+                    </div>
+        
+        
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <!-- link --> 
+               <li class="uno">
+                 <a href="#scritti" class="name">Attraverso gli scritti</a>
+               </li>
+
+               <li class="uno">
+                 <a href="#stile" class="name">Lo stile letterario</a>
+               </li>
+
+               <li class="uno">
+                 <a href="#criteri" class="name">I criteri redazionali</a>
+               </li>
+         </li>
+     </ul>
+
+ </nav>
+
+
+    <!--! href="/additionalResources/110/introduction/Introduzione_PaoloTrionfini.pdf" download -->
+
+    <div id="content">
+     
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+         <!-- dark navbar -->
+
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span>Metadata</span>
+          </button>
+            <!-- first dropdown menu -->
+  
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active" id="commandList">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">The Sims and Psychology</a>
+                  <div id="commandMenu" class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#" id="load_psychologytoday">The Sims: Suburban Rhapsody</a>
+                    <a class="dropdown-item" href="#" id="load_gamestudies">Self-Portrayal in a Simulated Life: Projecting
+                      Personality and Values in ©The Sims 2</a>
+                    <a class="dropdown-item" href="#" id="load_wired_2">The Sims Made Me Realize I'm Ready for More In
+                      Life</a>
+
+                    <!--<a class="dropdown-item editOnly d-none" href="#" role="button" data-toggle="modal" data-target="#EntityUpload">Importa entità</a>-->
+                  </div>
+                </li>
+              </ul>
+              <!-- second dropdown menu -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active" id="commandList">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">The Sims and Content Creation</a>
+                  <div id="commandMenu" class="dropdown-menu" aria-labelledby="dropdown01">
+
+                    <a class="dropdown-item" href="#" id="load_wired">Inside the World of Young Black Sims Content
+                      Creators</a>
+                    <a class="dropdown-item" href="#" id="load_metropolis">For a Community of Gamers, The Sims Is a Gateway to
+                      the Real World of Architecture</a>
+                    <a class="dropdown-item" href="#" id="load_venturebeat">EA’s Laura Miele: Making games is hard, and it
+                      keeps changing</a>
+
+                    <!--<a class="dropdown-item editOnly d-none" href="#" role="button" data-toggle="modal" data-target="#EntityUpload">Importa entità</a>-->
+                  </div>
+                </li>
+              </ul>
+
+              <!-- third dropdown menu -->
+
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active" id="commandList">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">The Sims and Society</a>
+                  <div id="commandMenu" class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#" id="load_theguardian">My land of make believe: life after The Sims</a>
+                    <a class="dropdown-item" href="#" id="load_thehindi">The Sims' turns 20: Why the social simulation game is
+                      more culturally relevant than ever</a>
+                    <a class="dropdown-item" href="#" id="load_gamespot">The Most Influential Games Of The 21st Century: The
+                      Sims</a>
+
+                    <!--<a class="dropdown-item editOnly d-none" href="#" role="button" data-toggle="modal" data-target="#EntityUpload">Importa entità</a>-->
+                  </div>
+                </li>
+              </ul>
+          <div class="indi"> <a id="back" href="/edition/browse/editorial_plan/110" data-toggle="tooltip" title="Torna all'edizione"><i class="fas fa-arrow-left"></i></a></div> 
+        </div>
+      </nav>
+      <div id="iframeHolder">
+        <!-- load the articles here-->
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+      });
+
+    });
+  </script>
+  <script>
+    $(function () {
+       $('[data-toggle="tooltip"]').tooltip()
+     })
+  </script>
+  <script>
+    //load the articles
+
+              $("#load_thehindi").on("click", function() {
+                      $("#iframeHolder").load("/articles_giulia/thehindi.html"); //put the RIGHT location
+                  });
+              $("#load_gamespot").on("click", function() {
+                      $("#iframeHolder").load("/articles_giulia/gamespot.html");
+                  });
+              $("#load_theguardian").on("click", function() {
+                      $("#iframeHolder").load("/articles_giulia/theguardian.html");
+                  });
+
+              $("#load_psychologytoday").on("click", function() {
+                          $("#iframeHolder").load("/articles_szilvi/psychologytoday.html");
+                      });
+              $("#load_gamestudies").on("click", function() {
+                          $("#iframeHolder").load("/articles_szilvi/gamestudies.html");
+                  });
+              $("#load_wired").on("click", function() {
+                  $("#iframeHolder").load("/articles_szilvi/wired.html");
+              });
+              $("#load_wired_2").on("click", function() {
+                  $("#iframeHolder").load("/articles_deniz/wired_2.html");
+              });
+
+              $("#load_venturebeat").on("click", function() {
+                  $("#iframeHolder").load("/articles_szilvi/venturebeat.html");
+              });
+
+              $("#load_metropolis").on("click", function() {
+                  $("#iframeHolder").load("/articles_deniz/metropolis.html");
+              });
+  </script>
+
+</body>
+
+</html>
